@@ -1,15 +1,250 @@
-html{
-    width: 100%;
-    height: 100%;
+:root {
+    --primary-color: #1a8e54;
+    --primary-dark: #19b630;
+    --bg-light: #90ee90;
+    --bg-light-subtle: #00ff00;
+    --text-light: white;
+    --text-muted: white;
+    --border-color: #1d9413;
 }
 
 body{
-    background-color: blue;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 2;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 120vh;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.seccion{
+    margin-top: 50px;
+}
+
+.logo-suntime img{
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(1 1 15px rgba(13, 152, 13, 0.942))
+}
+
+.seccion{
+    margin-top: 50px;
+}
+
+.logo-suntime{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+@media (max-width: 700px){
+    .logo-suntime{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.gradient-text{
+    background: linear-gradient(100deg, var(--primary-color), #1a8e54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: gainsboro;
+    background-clip: text;
+}
+
+.link{
+    display: inline-flexbox;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--bg-light-subtle);
+    border: 3px solid var(--primary-dark);
+    border-radius: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.link:hover {
+    background: var(--primary-dark);
+    color: gray;
+    box-shadow: 2 5px 15px rgb(22, 120, 5);
+}
+
+.imagen-discord{
+     background-image: url('https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-youtube1{
+     background-image: url('https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-youtube2{
+     background-image: url('https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-youtube3{
+     background-image: url('https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-twitter{
+     background-image: url('https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-instagram{
+     background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-github{
+     background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-roblox1{
+     background-image: url('https://www.citypng.com/public/uploads/preview/hd-roblox-white-symbol-sign-icon-logo-png-701751694787435ra1r2desi8.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-roblox2{
+     background-image: url('https://www.citypng.com/public/uploads/preview/hd-roblox-white-symbol-sign-icon-logo-png-701751694787435ra1r2desi8.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.bg-green-subtle{
+    background-color: var(--bg-light-subtle);
+}
+
+.sobremi{
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presentacion{
+    text-align: left;
+    font-family: "Arial Narrow", serif;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(46, 252, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(rgb(173, 255, 47));
+    border-radius: 15px;
+    box-shadow: 0 6px 6px rgba(82, 255, 14, 0.79);
+}
+
+.project-card{
+    cursor: pointer;
+}
+
+.project-card:hover{
+    box-shadow: 2 9px 15px rgb(39, 255, 5);
+}
+
+.misproyectos {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 1000px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.soportebot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen-discord2{
+     background-image: url('https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.imagen-discord3{
+     background-image: url('https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 25px;
+     color: rgb(89, 221, 7);
+}
+
+.invite{
+    display: inline-flexbox;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--bg-light-subtle);
+    border: 3px solid var(--primary-dark);
+    border-radius: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.invite:hover {
+    background: var(--primary-dark);
+    color: gray;
+    box-shadow: 2 5px 15px rgb(22, 120, 5);
+}
+
+.nadeshiko{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes fadeIn {
@@ -114,35 +349,17 @@ header{
     padding-top: 10px;
 }
 
-.presentacion{
-    text-align: left;
-    font-family: "Jersey 10", serif;
-    font-size: 25px;
-    letter-spacing: 1px;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background: linear-gradient(green, rgb(173, 255, 47));
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 0 6px 6px rgba(58, 205, 0, 0.79);
-}
-
-
 .card {
-    background-color: rgb(0, 242, 255);
-    font-family: "Jersey 10", serif;
+    background-color: rgb(102, 255, 0);
+    font-family: "Arial Narrow", serif;
     font-size: x-large;
     font-weight: bold;
     position: relative;
     overflow: hidden;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 3px;
-    box-shadow: 0 5px 28px rgb(0, 0, 0);
+    box-shadow: 0 5px 28px rgb(255, 255, 255);
 }
 
 .shine {
@@ -186,21 +403,21 @@ header{
 .titleproyect{
     width: 100%;
     height: auto;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 5px;
-    color: rgb(0, 255, 255);
+    color: rgb(100, 255, 10);
 }
 
 .projects-title{
     width: 100%;
     height: auto;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 5px;
-    color: rgb(0, 255, 255);
+    color: rgb(55, 255, 0);
     padding-left: 100px;
     padding-right: 100px;
     background-color: #000000;
@@ -225,7 +442,7 @@ header{
 .commands{
     display: flex;
     justify-content: center;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 50px;
     color: aqua;
@@ -237,7 +454,7 @@ header{
 
 .documentation p{
     text-align: left;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     background-color: #000000;
     font-size: 25px;
     letter-spacing: 1px;
@@ -256,7 +473,7 @@ header{
 .bio{
     width: 100%;
     height: auto;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 5px;
@@ -266,7 +483,7 @@ header{
 .projects-title{
     width: 100%;
     height: auto;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 5px;
@@ -280,14 +497,14 @@ header{
 .channel-title{
     width: 100%;
     height: auto;
-    font-family: "Jersey 10", serif;
+    font-family: "Arial Narrow", serif;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(27, 255, 27);
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #458a5f;
+    background-color: #04ff64;
     border-radius: 15px;
 }
 
@@ -301,7 +518,7 @@ header{
     color: rgb(255, 255, 255);
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #ff01e6;
+    background-color: #1aff00;
     border-radius: 15px;
 }
 
