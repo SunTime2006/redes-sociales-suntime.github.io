@@ -205,40 +205,37 @@ body{
     margin-right: auto;
 }
 
-.imagen-discord2{
-     background-image: url('https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 25px;
-     color: rgb(89, 221, 7);
+.imagen-discord2,
+.imagen-discord3 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 8px;
 }
 
-.imagen-discord3{
-     background-image: url('https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 25px;
-     color: rgb(89, 221, 7);
+.imagen-discord2:hover,
+.imagen-discord3:hover {
+  transform: scale(1.1);
 }
 
-.invite{
-    display: inline-flexbox;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.5rem 1.5rem;
-    background: var(--bg-light-subtle);
-    border: 3px solid var(--primary-dark);
-    border-radius: 0.75rem;
-    color: var(--primary-color);
-    font-weight: 300;
+.invite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00ff00;   /* el color verde que usas */
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  gap: 8px;
+  transition: background-color 0.2s ease;
 }
 
 .invite:hover {
-    background: var(--primary-dark);
-    color: gray;
-    box-shadow: 2 5px 15px rgb(22, 120, 5);
+  background-color: #7fff00;
 }
 
 .nadeshiko{
@@ -247,23 +244,121 @@ body{
     margin-right: auto;
 }
 
+.imagen-discord4 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 8px;
+}
+
 .invite-nadeshiko{
-    display: inline-flexbox;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.5rem 1.5rem;
-    background: var(--bg-light-subtle);
-    border: 3px solid var(--primary-dark);
-    border-radius: 0.75rem;
-    color: var(--primary-color);
-    font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00ff00;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  gap: 8px;
+  transition: background-color 0.2s ease;
 }
 
 .invite-nadeshiko:hover {
-    background: var(--primary-dark);
-    color: gray;
-    box-shadow: 2 5px 15px rgb(22, 120, 5);
+  background-color: #7fff00;
 }
+
+.ficticio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.suntime-channel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imagen-discord5,
+.imagen-youtube4 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 8px;
+}
+
+.imagen-discord5:hover,
+.imagen-youtube4:hover {
+  transform: scale(1.1);
+}
+
+.invite-channel,
+.link-channel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00ff00;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  margin: 10px;
+}
+
+.invite-channel:hover,
+.link-channel:hover {
+  background-color: #7fff00;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #00ff00;
+}
+
+@media (max-width: 768px) {
+  .ficticio {
+    max-width: 95%;
+    padding: 20px 10px;
+  }
+
+  .imagen-discord5,
+  .imagen-youtube4 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .invite-channel,
+  .link-channel {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
 
 @keyframes fadeIn {
     from{
