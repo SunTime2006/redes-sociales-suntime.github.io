@@ -579,21 +579,30 @@ body{
   }
 }
 
+.programas-usados {
+    display: flex;
+    flex-wrap: wrap; /* permite que bajen a otra línea si no caben */
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;
+    gap: 1rem; /* espacio entre cuadros */
+    margin-top: 2rem;
+}
+
 .html, .css, .python, .javascript, .gimp, .figma, .gamemaker {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column; /* imagen arriba, texto abajo */
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.3rem;
-    padding: 0.5rem 1.5rem;
-    background: #00FF00; /* Fondo verde brillante, como los botones */
-    border: none; /* Quita las barras */
-    border-radius: 0.75rem; /* Bordes redondeados */
+    padding: 1rem;
+    background: #00FF00; /* verde brillante como la segunda imagen */
+    border: none;
+    border-radius: 0.75rem;
     color: #0a0a0a;
     font-weight: 500;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
-    height: 160px;
-    width: 300px;
+    height: 200px;
+    width: 250px;
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
@@ -616,6 +625,13 @@ body{
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: white;
+    margin-top: 0.5rem;
+}
+
+.html img, .css img, .python img, 
+.javascript img, .gimp img, .figma img, .gamemaker img {
+    width: 80px;
+    height: auto;
 }
 
 .redes{
