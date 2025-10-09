@@ -73,3 +73,7 @@ function drawField() {
 
 setup();
 draw(1);
+}
+
+setup();
+draw(1);
