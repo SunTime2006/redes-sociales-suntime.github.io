@@ -271,6 +271,88 @@ body{
   background-color: #7fff00;
 }
 
+.camp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.yuru-camp-fandom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imagen-discord6 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 8px;
+}
+
+.imagen-discord6:hover {
+  transform: scale(1.1);
+}
+
+.invite-fandom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00ff00;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  margin: 10px;
+}
+
+.invite-fandom:hover {
+  background-color: #7fff00;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #00ff00;
+}
+
+@media (max-width: 768px) {
+  .camp {
+    max-width: 95%;
+    padding: 20px 10px;
+  }
+
+  .imagen-discord6 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .invite-fandom {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
 .ficticio {
   display: flex;
   flex-direction: column;
@@ -358,7 +440,6 @@ body{
     padding: 6px 12px;
   }
 }
-
 
 @keyframes fadeIn {
     from{
@@ -591,48 +672,6 @@ header{
     font-size: 32px;
     letter-spacing: 5px;
     color: rgb(0, 255, 255);
-}
-
-.projects-title{
-    width: 100%;
-    height: auto;
-    font-family: "Arial Narrow", serif;
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 5px;
-    color: rgb(255, 255, 255);
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #23ff01;
-    border-radius: 15px;
-}
-
-.channel-title{
-    width: 100%;
-    height: auto;
-    font-family: "Arial Narrow", serif;
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 5px;
-    color: rgb(27, 255, 27);
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #04ff64;
-    border-radius: 15px;
-}
-
-.anime-title{
-    width: 100%;
-    height: auto;
-    font-family: "Jersey 10", serif;
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 5px;
-    color: rgb(255, 255, 255);
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #1aff00;
-    border-radius: 15px;
 }
 
 @media (max-width: 390px){
