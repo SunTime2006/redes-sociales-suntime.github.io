@@ -633,47 +633,6 @@ header{
     border-radius: 50%;
 }
 
-.commands{
-    display: flex;
-    justify-content: center;
-    font-family: "Arial Narrow", serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: aqua;
-    background-color: #000000;
-    border: 5px solid aqua;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.documentation p{
-    text-align: left;
-    font-family: "Arial Narrow", serif;
-    background-color: #000000;
-    font-size: 25px;
-    letter-spacing: 1px;
-    font-style: normal;
-    color: rgb(162, 242, 242);
-    letter-spacing: 1px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 100px;
-    padding-right: 100px;
-    border: 5px solid aqua;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.79);
-}
-
-.bio{
-    width: 100%;
-    height: auto;
-    font-family: "Arial Narrow", serif;
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 5px;
-    color: rgb(0, 255, 255);
-}
-
 @media (max-width: 390px){
     .bio{
         font-size: 34px;
