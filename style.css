@@ -588,7 +588,7 @@ body{
     margin-top: 2rem;
 }
 
-.html, .css, .python, .javascript, .gimp, .figma, .gamemaker {
+.html, .css, .python, .javascript, .gimp, .figma, .godot {
     display: flex;
     flex-direction: column; /* imagen arriba, texto abajo */
     align-items: center;
@@ -609,7 +609,7 @@ body{
 }
 
 .html:hover, .css:hover, .python:hover, 
-.javascript:hover, .gimp:hover, .figma:hover, .gamemaker:hover {
+.javascript:hover, .gimp:hover, .figma:hover, .godot:hover {
     background-color: #08c908;
     color: white;
     box-shadow: 2px 5px 15px rgba(22, 120, 5, 0.8);
@@ -617,7 +617,7 @@ body{
 }
 
 .html p, .css p, .python p, 
-.javascript p, .gimp p, .figma p, .gamemaker p {
+.javascript p, .gimp p, .figma p, .godot p {
     z-index: 1;
     font-size: 1rem;
     font-weight: 600;
@@ -629,7 +629,7 @@ body{
 }
 
 .html img, .css img, .python img, 
-.javascript img, .gimp img, .figma img, .gamemaker img {
+.javascript img, .gimp img, .figma img, .godot img {
     width: 80px;
     height: auto;
 }
